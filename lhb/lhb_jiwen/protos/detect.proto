@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package com.yimuzn.nutsdetection.device.grpc;
+
+service DetectService {
+    // 更新算法配置(单向)
+    // 【软件--->算法】，更新底层算法配置,或者切换底层算子
+    rpc updateAlgorithmConfig(AlgorithmConfigRequest) returns (CommonResponse);
+
+    // 视频帧流式检测接口(双向)
+    // 【软件--->算法】 + 【算法--->软件】
+    rpc streamVideo(stream FrameRequest) returns (stream FrameResponse);
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>   通用响应对象   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+message CommonResponse {
+    int32 code = 1;      // 状态码(200-成功 500-失败)
+    string message = 2;  // 提示信息
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>   更新算法配置接口   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+message AlgorithmConfigRequest {
+    string model_file_path = 1; // 模型路径
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>   双向视频流接口   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+message FrameRequest {
+    bytes origin_frame = 1; // 处理前的原始视频帧
+}
+
+message FrameResponse {
+    // 单零件检测结果类
+    message PartResult {
+        string part_id = 1;         // 零件ID
+        string part_code = 2;       // 零件类型编码(用于获得理论螺母数,并决定是否需要判断正反面)
+        int32  nut_num = 3;         // 零件的实际螺母数
+        int32  face_direction = 4;  // 正反面(0-正面  1-反面)
+    }
+
+
+    // 实际响应数据体
+    bytes processed_frame = 1;                  // 已处理的带标注的视频帧，用于前端实时回显
+    bool  has_piece = 2;                        // 该帧图片检测线上是否有零件，软件层用该数据来给视频帧分批
+    bool  is_key_frame = 3;                     // 是否是关键帧(关键帧就是过线时，算法拿去做判断的那一帧图片，只有关键帧才会有下面的检测结果，其他的普通帧是没有下面的检测结果的)
+    repeated PartResult part_result_list = 4;   // 当前关键帧中所有零件检测结果集合
+}

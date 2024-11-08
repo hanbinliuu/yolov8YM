@@ -1,0 +1,11 @@
+/runs/
+/lhb/mod/
+/lhb/lhb_exp/jiwen/frontback_detection/test_img/
+!/lhb/lhb_exp/jiwen/inframe_count/
+!/lhb/lhb_exp/jiwen/template_img/
+!/lhb/lhb_exp/jiwen/frontback_detection/temp/
+/lhb/logs/
+/.idea
+/lhb/v8train
+/lhb/straw_exp
+/lhb/lhb_ocr/*

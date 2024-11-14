@@ -13,10 +13,8 @@ def run_detection(path, ip):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
-    ip = "0.0.0.0:50052"
+    ip = "192.168.1.76:50052"
     paths = [
-        "/Users/hanbinliu/PycharmProjects/datasets/cutpresshole3/images/train/IMG_2261.jpeg",
-        "/Users/hanbinliu/PycharmProjects/datasets/cutpresshole3/images/train/IMG_2222.jpeg",
-        "/Users/hanbinliu/PycharmProjects/datasets/cutpresshole3/images/train/IMG_2263.jpeg"
+        "/Volumes/TU280Pro/ym/兴宇/xingyu_test/xingyu/20231130-084345.jpg"
     ]
     run_detection(paths, ip)

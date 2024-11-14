@@ -1,7 +1,7 @@
 import cv2
 
 img_path = r"C:\Users\lhb\Desktop\15_57_57.jpg"
-# img_path = r"C:\Users\lhb\Desktop\test\Image_20240103161415795.bmp"
+# img_path = r"C:\Users\baseProject\Desktop\test\Image_20240103161415795.bmp"
 # Read image
 img = cv2.imread(img_path)
 # 创建一个窗口

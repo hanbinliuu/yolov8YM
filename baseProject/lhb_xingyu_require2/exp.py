@@ -22,7 +22,7 @@ def img_process(img):
     return contours
 
 
-# img = cv2.imread(r"C:\Users\lhb\Desktop\test\Image_20240103170917810.bmp")
+# img = cv2.imread(r"C:\Users\baseProject\Desktop\test\Image_20240103170917810.bmp")
 img = cv2.imread(r"C:\Users\lhb\Desktop\test2\Image_20240108095047163.bmp")
 x1, y1, w1, h1 = 1925, 2079, 86, 236
 # x1,y1,w1,h1 = 2350, 811, 75, 257

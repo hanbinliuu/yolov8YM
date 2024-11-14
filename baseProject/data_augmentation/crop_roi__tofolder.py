@@ -47,26 +47,26 @@ def batch_crop_and_save(input_folder, output_folder):
 
         if has_images(filename):
             # 10
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\10\\R2TBR26228AA\\cam1":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\10\\R2TBR26228AA\\cam1":
                 x, y, w, h = 601, 1535, 136, 87
                 x2, y2, w2, h2 = 0, 0, 0, 0
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\10\\R2TBR26228AA\\cam3":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\10\\R2TBR26228AA\\cam3":
                 x, y, w, h = 2174, 1661, 142, 64
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\10\\R2TBR26228AA\\cam5":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\10\\R2TBR26228AA\\cam5":
                 x, y, w, h = 1569, 975, 168, 77
                 x2, y2, w2, h2 = 2337, 869, 176, 75
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\10\\R2TBR26229AA\\cam1":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\10\\R2TBR26229AA\\cam1":
                 x, y, w, h = 764, 1542, 136, 83
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\10\\R2TBR26229AA\\cam3":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\10\\R2TBR26229AA\\cam3":
                 x, y, w, h = 2316, 1648, 117, 61
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\10\\R2TBR26229AA\\cam5":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\10\\R2TBR26229AA\\cam5":
                 x, y, w, h = 2968, 835, 187, 65
                 x2, y2, w2, h2 = 2147, 886, 193, 72
 
@@ -170,27 +170,27 @@ def batch_crop_and_save(input_folder, output_folder):
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
             # 70
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\70\\PP620236AA\\cam1":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\70\\PP620236AA\\cam1":
                 x, y, w, h = 1285, 1467, 481, 219
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\70\\PP620236AA\\cam3":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\70\\PP620236AA\\cam3":
                 x, y, w, h = 1911, 1501, 212, 209
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\70\\PP620236AA\\cam4":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\70\\PP620236AA\\cam4":
                 x, y, w, h = 88, 700, 1292, 1037
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\70\\PP620237AA\\cam1":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\70\\PP620237AA\\cam1":
                 x, y, w, h = 1314, 1470, 475, 231
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\70\\PP620237AA\\cam3":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\70\\PP620237AA\\cam3":
                 x, y, w, h = 1875, 1489, 229, 199
                 x2, y2, w2, h2 = 0, 0, 0, 0
 
-            if filename == "C:\\Users\\lhb\\Desktop\\xingyu_pic\\70\\PP620237AA\\cam4":
+            if filename == "C:\\Users\\baseProject\\Desktop\\xingyu_pic\\70\\PP620237AA\\cam4":
                 x, y, w, h = 25, 432, 1430, 1120
                 x2, y2, w2, h2 = 0, 0, 0, 0
 

@@ -1,0 +1,16 @@
+[2024-11-14 22:05:11.734 INF][__main__ <MainThread>] grpc Server is listening at port :50052
+[2024-11-14 22:07:05.898 INF][detection grpc-server <ThreadPoolExecutor-0_0>] gRPC@detection receive request
+[2024-11-14 22:07:06.933 INF][detection grpc-server <ThreadPoolExecutor-0_0>] (DetectFeaturesYolo) using 1.0344841480255127s
+[2024-11-14 22:07:06.933 INF][detection grpc-server <ThreadPoolExecutor-0_0>] (DetectFeaturesYolo) result: {0: 1}
+[2024-11-14 22:07:13.741 INF][__main__ <MainThread>] stop grpc server at 192.168.1.76:50052
+[2024-11-14 22:07:13.741 ERR][__main__ <MainThread>] exception raised
+Traceback (most recent call last):
+  File "/Users/lhb/Documents/pycharmProject/yolov8/lhb/lhb_xingyu/application_detection_xingyu.py", line 71, in <module>
+    main()
+  File "/Users/lhb/Documents/pycharmProject/yolov8/lhb/lhb_xingyu/application_detection_xingyu.py", line 58, in main
+    stop_event.wait()
+  File "/opt/anaconda3/envs/yolov8/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/opt/anaconda3/envs/yolov8/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+TypeError: signal_handler() takes 1 positional argument but 2 were given

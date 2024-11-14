@@ -235,9 +235,9 @@ seq = iaa.Sequential(
 
 
 # 图片文件相关路径
-path = 'C:/Users/lhb/Desktop/lightenhance/'
+path = 'C:/Users/baseProject/Desktop/lightenhance/'
 # 保存路径可以是不同的路径，但是需要先把保存地方的文件夹建好
-savedpath = 'C:/Users/lhb/Desktop/test/'
+savedpath = 'C:/Users/baseProject/Desktop/test/'
 
 imglist = []
 filelist = os.listdir(path)

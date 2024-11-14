@@ -35,9 +35,9 @@ def run_detection_server(host, port, model_path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--host', type=str, default="192.168.6.95", help='grpc server port')
+    parser.add_argument('--host', type=str, default="192.168.1.76", help='grpc server port')
     parser.add_argument('--port', type=str, default='50052', help='port')
-    parser.add_argument('--model_path', type=str, default="./lhb/model/yolov8cuthole2.pt", help='path to the yolo')
+    parser.add_argument('--model_path', type=str, default="./baseProject/model/yolov8cuthole2.pt", help='path to the yolo')
 
     args = parser.parse_args()
     print(args)
@@ -61,6 +61,7 @@ def main():
 if __name__ == '__main__':
     # 获取脚本所在的目录
     current_dir = frozen_dir.app_path()
+    print(current_dir)
 
     # 构建相对路径
     log_file = os.path.join(current_dir, 'logs', 'xingyu_app.log')

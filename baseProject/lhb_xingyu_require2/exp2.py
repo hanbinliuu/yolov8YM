@@ -121,7 +121,7 @@ if __name__ == '__main__':
     x2, y2, w2, h2 = 2652, 2686, 71, 106
 
     # 50mm镜头
-    # img = cv2.imread(r"C:\Users\lhb\Desktop\test2\Image_20240108095447745.bmp")
+    # img = cv2.imread(r"C:\Users\baseProject\Desktop\test2\Image_20240108095447745.bmp")
     # x1, y1, w1, h1 = 2119, 2715, 100, 77
     # x2, y2, w2, h2 = 2171, 2812, 78, 102
 

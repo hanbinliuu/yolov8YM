@@ -7,5 +7,5 @@
 /baseProject/logs/
 /.idea
 /baseProject/v8train
-/baseProject/straw_exp
-/baseProject/lhb_ocr/*
+/baseProject/straw_exist_exp
+/baseProject/ocr_exp/*

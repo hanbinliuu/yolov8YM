@@ -3,9 +3,9 @@ import grpc
 from concurrent import futures
 import time
 
-from lhb_jiwen.src.core.detectionController import TrackObject
-from lhb_jiwen.src.iot_lib.stopwatch import StopWatch
-from lhb_jiwen.protos import detect_pb2, detect_pb2_grpc
+from ConveyorBelt_obj_detection.src.core.detectionController import TrackObject
+from ConveyorBelt_obj_detection.src.iot_lib.stopwatch import StopWatch
+from ConveyorBelt_obj_detection.protos import detect_pb2, detect_pb2_grpc
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 

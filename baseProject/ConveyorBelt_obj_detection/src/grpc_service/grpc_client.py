@@ -2,7 +2,7 @@ import logging
 import cv2
 import grpc
 
-from lhb_jiwen.protos import detect_pb2, detect_pb2_grpc
+from ConveyorBelt_obj_detection.protos import detect_pb2, detect_pb2_grpc
 
 
 def read_bytes_img(frame: str) -> bytes:

@@ -10,7 +10,7 @@ import contextlib
 import detection_pb2_grpc
 import frozen_dir
 from iot_lib.iot_logger import LoggerConfigurator
-from lhb_xingyu.src.grpc_service.grpc_server import DetectService
+from xingyu_static_detection.src.grpc_service.grpc_server import DetectService
 
 
 @contextlib.contextmanager

@@ -4,7 +4,7 @@ from protos import detection_pb2_grpc, detection_pb2
 
 def run_detection(path):
 
-    with grpc.insecure_channel('192.168.6.152:50052') as channel:
+    with grpc.insecure_channel('192.168.10.185:50052') as channel:
         stub = detection_pb2_grpc.DetectServiceStub(channel)
         request = detection_pb2.DetectRequest(imagePath=path)
         rep = stub.DetectFeaturesYolo(request)
@@ -29,7 +29,7 @@ if __name__ == '__main__':
     #          ]
 
     paths = [
-               '/app/share/xingyu/img_v3_0269_3f1eaa8a-9aed-41ce-8157-510f5835a65g.jpg'
+               '/Users/lhb/Documents/pycharmProject/datasets/xingyu_train5/images/train/Image_20231113151654286.png'
              ]
 
     run_detection(paths)
@@ -39,7 +39,6 @@ if __name__ == '__main__':
 
 # 挂载卷开服务
 # docker run -v C:/Users/Administrator/Desktop/test:/app/share -p 50052:50052 xingyu
-
 # 执行进入container内部
 # docker exec -it d1cc85858a03 /bin/bash
 

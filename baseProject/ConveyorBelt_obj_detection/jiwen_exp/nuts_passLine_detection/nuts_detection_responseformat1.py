@@ -13,7 +13,7 @@ from supervision.tools.detections import Detections, BoxAnnotator
 from typing import List
 import numpy as np
 
-from lhb_jiwen.jiwen_exp.algo.line_counter import LineCounter,LineCounterAnnotator
+from ConveyorBelt_obj_detection.jiwen_exp.algo.line_counter import LineCounter,LineCounterAnnotator
 from ultralytics import YOLO
 from tqdm import tqdm
 

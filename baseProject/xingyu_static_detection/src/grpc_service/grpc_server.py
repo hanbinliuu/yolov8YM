@@ -3,9 +3,9 @@ import time
 import grpc
 from concurrent import futures
 
-from lhb_xingyu.src.iot_lib.stopwatch import StopWatch
+from xingyu_static_detection.src.iot_lib.stopwatch import StopWatch
 from protos import detection_pb2, detection_pb2_grpc
-from lhb_xingyu.src.algolib.detection import count_objects_in_images
+from xingyu_static_detection.src.algolib.detection import count_objects_in_images
 from ultralytics import YOLO
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24

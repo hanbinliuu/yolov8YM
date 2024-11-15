@@ -5,9 +5,9 @@ import signal
 import threading
 import contextlib
 
-from lhb_jiwen.protos import detect_pb2_grpc
-from lhb_jiwen.src.grpc_service.grpc_server import DetectServer
-from lhb_jiwen.src.iot_lib.iot_logger import LoggerConfigurator
+from ConveyorBelt_obj_detection.protos import detect_pb2_grpc
+from ConveyorBelt_obj_detection.src.grpc_service.grpc_server import DetectServer
+from ConveyorBelt_obj_detection.src.iot_lib.iot_logger import LoggerConfigurator
 
 
 @contextlib.contextmanager

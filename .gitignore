@@ -1,11 +1,5 @@
-/runs/
-/baseProject/mod/
-/baseProject/lhb_exp/jiwen/frontback_detection/test_img/
-!/baseProject/lhb_exp/jiwen/inframe_count/
-!/baseProject/lhb_exp/jiwen/template_img/
-!/baseProject/lhb_exp/jiwen/frontback_detection/temp/
 /baseProject/logs/
 /.idea
-/baseProject/v8train
-/baseProject/straw_exp
-/baseProject/lhb_ocr/*
+!/runs/
+!/baseProject/mod/
+!/baseProject/v8train/

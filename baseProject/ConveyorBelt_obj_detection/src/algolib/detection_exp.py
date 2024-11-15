@@ -13,12 +13,12 @@ from supervision.video.dataclasses import VideoInfo
 from supervision.video.source import get_video_frames_generator
 from supervision.video.sink import VideoSink
 
-from lhb_jiwen.src.algolib.flip_detection import check_flip
+from ConveyorBelt_obj_detection.src.algolib.flip_detection import check_flip
 from ultralytics import YOLO
 
 
-from lhb_jiwen.src.algolib.line_counter import LineCounter,LineCounterAnnotator
-from lhb_jiwen.src.algolib.utilis import find_corresponding_tracker_ids, calculate_center_points, \
+from ConveyorBelt_obj_detection.src.algolib.line_counter import LineCounter,LineCounterAnnotator
+from ConveyorBelt_obj_detection.src.algolib.utilis import find_corresponding_tracker_ids, calculate_center_points, \
     find_most_common_value_lists
 
 

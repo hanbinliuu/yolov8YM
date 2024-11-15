@@ -13,9 +13,9 @@ from supervision.geometry.dataclasses import Point
 from supervision.tools.detections import Detections, BoxAnnotator
 from ultralytics import YOLO
 
-from lhb_jiwen.src.algolib.flip_detection import check_flip
-from lhb_jiwen.src.algolib.line_counter import LineCounter, LineCounterAnnotator
-from lhb_jiwen.src.algolib.utilis import find_corresponding_tracker_ids2, calculate_center_points, \
+from ConveyorBelt_obj_detection.src.algolib.flip_detection import check_flip
+from ConveyorBelt_obj_detection.src.algolib.line_counter import LineCounter, LineCounterAnnotator
+from ConveyorBelt_obj_detection.src.algolib.utilis import find_corresponding_tracker_ids2, calculate_center_points, \
     find_most_common_value_lists
 
 

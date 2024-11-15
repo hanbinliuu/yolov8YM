@@ -4,7 +4,7 @@ from protos import detection_pb2_grpc, detection_pb2
 
 def run_detection(path):
 
-    with grpc.insecure_channel('192.168.6.152:50052') as channel:
+    with grpc.insecure_channel('0.0.0.0:50052') as channel:
         stub = detection_pb2_grpc.DetectServiceStub(channel)
         request = detection_pb2.DetectRequest(imagePath=path)
         rep = stub.DetectFeaturesYolo(request)
@@ -28,9 +28,11 @@ if __name__ == '__main__':
     #
     #          ]
 
-    paths = [
-               '/app/share/xingyu/img_v3_0269_3f1eaa8a-9aed-41ce-8157-510f5835a65g.jpg'
-             ]
+    # paths = [
+    #            '/Users/lhb/Documents/pycharmProject/datasets/xingyu_train/images/train/Image_20231113161142515.png'
+    #          ]
+
+    paths = ['/app/share/Image_20231113161239016.png']
 
     run_detection(paths)
 
@@ -38,10 +40,9 @@ if __name__ == '__main__':
 # docker run -p 50052:50052 xingyu
 
 # 挂载卷开服务
-# docker run -v C:/Users/Administrator/Desktop/test:/app/share -p 50052:50052 xingyu
-
+# docker run -v /Users/lhb/Documents/pycharmProject/datasets/xingyu_train/images/train:/app/share -p 50052:50052 77582580/xingyu_detect:v1.0
 # 执行进入container内部
-# docker exec -it d1cc85858a03 /bin/bash
+# docker exec -it d1cc85858a03 /bin/bash -
 
 # copy file into container（需要在外部terminal中执行）
 # docker cp C:/Users/Administrator/Desktop/share 6366b287f1ee:/app

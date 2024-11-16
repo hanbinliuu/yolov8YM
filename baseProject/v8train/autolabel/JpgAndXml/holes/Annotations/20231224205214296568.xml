@@ -1,0 +1,26 @@
+<annotation>
+	<folder>holes</folder>
+	<filename>20231224205214296568.jpg</filename>
+	<path>./JpgAndXml\holes\images\20231224205214296568.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>157</width>
+		<height>121</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>oneu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>41</xmin>
+			<ymin>41</ymin>
+			<xmax>107</xmax>
+			<ymax>99</ymax>
+		</bndbox>
+	</object>
+</annotation>

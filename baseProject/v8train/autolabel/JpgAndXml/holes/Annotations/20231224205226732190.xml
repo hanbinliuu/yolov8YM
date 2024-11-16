@@ -1,0 +1,26 @@
+<annotation>
+	<folder>holes</folder>
+	<filename>20231224205226732190.jpg</filename>
+	<path>./JpgAndXml\holes\images\20231224205226732190.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>154</width>
+		<height>83</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>holes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>61</xmin>
+			<ymin>16</ymin>
+			<xmax>95</xmax>
+			<ymax>44</ymax>
+		</bndbox>
+	</object>
+</annotation>
